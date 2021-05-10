@@ -326,6 +326,7 @@ public class OpenGlRtmpActivity extends AppCompatActivity
 
   @Override
   public void onConnectionSuccessRtmp() {
+    rtmpCamera1.startEncoders();
     runOnUiThread(new Runnable() {
       @Override
       public void run() {

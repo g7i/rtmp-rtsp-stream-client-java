@@ -522,7 +522,7 @@ public abstract class Camera1Base
   public void startStream(String url) {
     streaming = true;
     if (!recordController.isRunning()) {
-      startEncoders();
+//      startEncoders();
     } else {
       resetVideoEncoder();
     }
@@ -530,7 +530,7 @@ public abstract class Camera1Base
     onPreview = true;
   }
 
-  private void startEncoders() {
+  public void startEncoders() {
     videoEncoder.start();
     audioEncoder.start();
     prepareGlView();
