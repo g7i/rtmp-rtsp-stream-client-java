@@ -561,7 +561,7 @@ public abstract class Camera2Base implements GetAacData, GetVideoData, GetMicrop
     onPreview = true;
   }
 
-  private void startEncoders() {
+  public void startEncoders() {
     videoEncoder.start();
     if (audioInitialized) audioEncoder.start();
     prepareGlView();
